@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DividerLinearLayout">
+        <attr name="dv_color" format="color"/>
+        <attr name="dv_padding" format="dimension"/>
+        <attr name="dv_margin_start" format="dimension"/>
+        <attr name="dv_margin_end" format="dimension"/>
+        <attr name="dv_type">
+            <flag name="LEFT" value="1"/>
+            <flag name="TOP" value="2"/>
+            <flag name="RIGHT" value="4"/>
+            <flag name="BOTTOM" value="8"/>
+        </attr>
+        <attr name="dv_width" format="dimension"/>
+
+        <!--如果DividerLinearLayout嵌套使用，例如DL0里面嵌套DL1，如果需要在DL0处也画分割线，
+            需要指定它为最外层。因为默认对于DL自身是不启用分割线的，不然，对于DL1，即有自身所画的
+            分割线，也有DL0为DL1所画的分割线，会重现多个分割线。-->
+        <attr name="dv_is_outer_most" format="boolean"/>
+    </declare-styleable>
+</resources>
