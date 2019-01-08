@@ -1,7 +1,7 @@
 # DividerHandler
 方便画分割线的类
 
-##使用方式
+## 使用方式
 直接使用DividerLinearLayout或者自定义类
 
 ## demo
